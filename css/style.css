@@ -1,0 +1,187 @@
+/* COMMON CSS STARTS HERE */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto&display=swap');
+:root {
+    --primaryFont: 'Josefin Sans', sans-serif;
+    --secondaryFont: 'Roboto', sans-serif;
+    --primaryColor: #FF6F61;
+    --secondaryColor: #11161E;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: var(--primaryFont);
+    background-color: rgb(255, 255, 255);
+}
+h1,h2,h3,h4,h5,h6,span,paragraph,ol,ul {
+    margin: 0;
+    padding: 0;
+}
+ul,li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+/* COMMON CSS ENDS HERE */
+
+/* HEADER>NAVBAR STARTS HERE */
+
+/* LARGE DISPLAYS ONLY */
+header nav a {
+    padding-top: 20px;
+}
+header nav a img {
+    width: 158px;
+    height: 64px;
+}
+header nav #myNavbar .navbar {
+    padding-top: 37px;
+}
+header nav #myNavbar .navbar li {
+    margin: 0 10px;
+    position: relative;
+}
+header nav #myNavbar .navbar li a:hover {
+    color: var(--primaryColor);
+}
+header nav #myNavbar .navbar li a {
+    color: var(--secondaryColor);
+    font-family: var(--primaryFont);
+    font-size: 16px;
+    font-weight: 400;
+    transition: 0.3s;
+    line-height: 26px;
+}
+header nav #myNavbar .navbar li a.active {
+    color: var(--primaryColor);
+}
+header nav #myNavbar .navbar li a .dropdownicon {
+    margin-left: 5px;
+    transition: 0.5s;
+}
+header nav #myNavbar .navbar li a:hover .dropdownicon {
+    transform: rotate(-180deg);
+}
+header nav #myNavbar .navbar li .subMenu {
+    background-color: rgb(236, 236, 236);
+    position: absolute;
+    right: -29px;
+    bottom: -300px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    border-radius: 10px;
+    border-top: 5px solid rgb(155, 155, 155);
+}
+
+header nav #myNavbar .navbar .sub:hover .subMenu {
+    bottom: -210px;
+    opacity: 1;
+    visibility: visible;
+}
+header nav #myNavbar .navbar li .subMenu li {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0;
+    border-bottom: 1px solid rgb(155, 155, 155);
+}
+header nav #myNavbar .navbar li .subMenu li:last-child {
+    border-bottom: none;
+}
+header nav #myNavbar .navbar li .subMenu li a {
+    padding: 0 50px;
+}
+header nav #myNavbar ul.purchaseIcons {
+    padding-top: 30px;
+    position: relative;
+}
+header nav #myNavbar .purchaseIcons li {
+    display: inline-block;
+    margin: 0 12px;
+}
+header nav #myNavbar .purchaseIcons li a {
+    color: var(--secondaryColor);
+    font-size: 18px;
+    transition: 0.3s;
+}
+header nav #myNavbar .purchaseIcons li a:hover {
+    color: var(--primaryColor);
+}
+header nav #myNavbar .purchaseIcons .count {
+    position: absolute;
+    margin-bottom: 100px;
+    top: 28px;
+    right: 7px;
+    background-color: var(--primaryColor);
+    width: 15px;
+    height: 15px;
+    line-height: 18px;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    border-radius: 10px;
+}
+/* LARGE DISPLAYS ONLY */
+
+/* TABLET DEVICES */
+.navbarMD .myNavbarMD {
+    background-color: white;
+    padding-top: 40px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    padding-bottom: 40px;
+}
+.navbarMD .myNavbarMD ul li {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.navbarMD .myNavbarMD ul li a {
+    font-size: 20px;
+    color: var(--primaryColor);
+    padding: 0 40px;
+    transition: 0.3s;
+}
+.navbarMD .myNavbarMD ul li a:hover {
+    color: var(--secondaryColor);
+}
+.navbarMD .myNavbarMD ul li a .rightIcon {
+    margin-left: 10px;
+    transition: 0.3s;
+}
+.navbarMD .myNavbarMD ul li a:hover .rightIcon {
+    transform: rotate(-180deg);
+}
+/* TABLET DEVICES */
+
+/* MOBILE DEVICES */
+.navbarSM .myNavbarSM {
+    background-color: white;
+    padding-top: 40px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    padding-bottom: 40px;
+}
+.navbarSM .myNavbarSM ul li {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.navbarSM .myNavbarSM ul li a {
+    font-size: 20px;
+    color: var(--primaryColor);
+    padding: 0 40px;
+    transition: 0.3s;
+}
+.navbarSM .myNavbarSM ul li a:hover {
+    color: var(--secondaryColor);
+}
+.navbarSM .myNavbarSM ul li a .rightIcon {
+    margin-left: 10px;
+    transition: 0.3s;
+}
+.navbarSM .myNavbarSM ul li a:hover .rightIcon {
+    transform: rotate(-180deg);
+}
+/* MOBILE DEVICES */
+
+/* HEADER>NAVBAR ENDS HERE */
